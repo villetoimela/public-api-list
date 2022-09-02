@@ -18,8 +18,8 @@ const ApiList = ({ response, loading }) => {
 
 
   return (
-    <div className="mx-2 mb-10">
-        <h3 className="font-semibold text-xl text-slate-600">API list</h3>
+    <div className="mx-2 mb-10 ">
+        <h3 className="font-semibold text-center text-xl text-sky-900 pb-2">API list</h3>
         <div className="grid gap-4 md:grid-cols-4">
         {response.entries && response.entries.map((api, index) => <ApiCard api={api} key={index} />)}
         </div>

@@ -5,10 +5,10 @@ import useAxios from "./hooks/useAxios";
 import { useEffect } from "react";
 
 function App() {
-  const { fetchData, response, loading } = useAxios('entries');
+  const { fetchData, response, loading } = useAxios("entries");
 
   useEffect(() => {
-    fetchData({ params: { category: 'Animals' } });
+    fetchData({ params: { category: "Animals" } });
   }, []);
   
 
